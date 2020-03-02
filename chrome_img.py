@@ -19,7 +19,8 @@ patches.extend([p1, p2, p3])
 
 c1 = Circle((20, 20), 5, facecolor='white', edgecolor=None, zorder=3)
 c2 = Circle((20, 20), 4, facecolor='blue', edgecolor=None, zorder=4)
-patches.extend([c1, c2])
+c3 = Circle((20, 20), 3, facecolor='black', edgecolor=None, zorder=5)
+patches.extend([c1, c2, c3])
 
 p = PatchCollection(patches, match_original=True)
 ax.add_collection(p)
